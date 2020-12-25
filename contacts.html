@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#pics">Pictures</a>
+    <a href="index.html#testimonial">Testimonials</a>
+    <a href="contacts.html">Contacts</a>
+    <a href="about.html">About</a>
+</nav>
+<h1>Where can you find us</h1>
+<div id="map"></div>
+<h1>Write to us</h1>
+<div class="form-container">
+    <form>
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="australia">Russia</option>
+            <option value="canada">China</option>
+            <option value="usa">USA</option>
+            <option value="usa">England</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
+<h1>Our contacts</h1>
+<address>
+    <a href="mailto:dmitrii.stukalov@list.ru">dmitrii.stukalov@list.ru</a><br>
+    <a href="tel:+79157011439">+7(915) 701-1439</a>
+    <br>
+    Novoizmailovsky Avenue, 16<br>
+    Saint Petersburg,<br>
+    SPb 196128<br>
+    Russia
+</address>
+<footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</footer>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZDx-cYMn4kEtOKhbJTnKE-Ixof8Vxs5U&callback=initMap&libraries=&v=weekly"
+        defer
+></script>
+<script src="index.js"></script>
+</body>
+</html>
